@@ -1,0 +1,63 @@
+body {
+  font: 2.5em "Lucida Sans", Courier, monospace;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  margin: 0.5em auto;
+}
+
+.header-content {
+  margin: 0em 0.3em;
+}
+
+.header-img {
+  width: 1.2em;
+}
+
+.vertical-line {
+  border-left: 2px solid #a9a9a9;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  margin: 0.5em auto;
+}
+
+.nav-items {
+  border: none;
+  padding: 0.2em 0.5em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.6em;
+  margin: 0 0.5em;
+  cursor: pointer;
+}
+
+.card-container {
+  border: 2px solid green;
+  width: 80%;
+  margin: 1em auto;
+  padding: 2em;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 2em;
+  grid-template-rows: repeat(3, auto);
+}
+
+.card {
+  border: 2px solid red;
+}
+
+p {
+  font-size: 0.5em;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  font-size: 0.4em;
+}
