@@ -1,0 +1,18 @@
+.card {
+  display: block;
+  /* border: 0.05em solid red; */
+  max-width: 10em;
+}
+
+a,
+.title-header {
+  margin: 0;
+  color: #551a8b;
+  text-decoration: none;
+}
+
+.sub-header {
+  margin-top: 0em;
+  font-size: 0.4em;
+  color: #a9a9a9;
+}

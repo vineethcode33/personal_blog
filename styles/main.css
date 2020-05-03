@@ -65,17 +65,21 @@ body {
   grid-gap: 2em;
 }
 
-/* move card to card.css and import*/
 .card {
   display: block;
   /* border: 0.05em solid red; */
   max-width: 10em;
+  margin: auto 1em;
 }
 
-a,
-.title-header {
+a {
   margin: 0;
   color: #551a8b;
+  text-decoration: none;
+}
+
+.title-header {
+  margin: 0;
   text-decoration: none;
 }
 
