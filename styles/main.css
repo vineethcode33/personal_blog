@@ -27,29 +27,62 @@ body {
 }
 
 .nav-items {
+  display: inline-block;
   border: none;
   padding: 0.2em 0.5em;
+  color: #551a8b;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 0.6em;
   margin: 0 0.5em;
   cursor: pointer;
 }
 
-.card-container {
-  border: 2px solid green;
-  width: 80%;
-  margin: 1em auto;
-  padding: 2em;
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-gap: 2em;
-  grid-template-rows: repeat(3, auto);
+.bio {
+  display: flex;
+  max-width: 15em;
+  margin: 0.5em auto;
+  align-items: center;
 }
 
+.profile-pic {
+  max-width: 30%;
+  margin-left: 1em;
+  margin-right: 1em;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 1em;
+}
+
+.list-container {
+  display: grid;
+  /* border: 0.05em solid green; */
+  max-width: 26em;
+  margin: 2em auto;
+  grid-template-columns: minmax(10em, 12em) minmax(10em, 12em);
+  grid-template-rows: auto;
+  justify-items: center;
+  grid-gap: 2em;
+}
+
+/* move card to card.css and import*/
 .card {
-  border: 2px solid red;
+  display: block;
+  /* border: 0.05em solid red; */
+  max-width: 10em;
+}
+
+a,
+.title-header {
+  margin: 0;
+  color: #551a8b;
+  text-decoration: none;
+}
+
+.sub-header {
+  margin-top: 0em;
+  font-size: 0.4em;
+  color: #a9a9a9;
 }
 
 p {
