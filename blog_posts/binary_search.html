@@ -15,6 +15,12 @@
     />
     <link rel="stylesheet" href="../styles/main.css" />
     <link rel="stylesheet" href="../styles/blog_post.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <header class="header-container">
@@ -32,6 +38,7 @@
       <a class="nav-items" href="../index.html">Social</a>
       <a class="nav-items" href="../index.html">Subscribe</a>
     </nav>
+    <hr class="content-divider" />
 
     <article class="blog-post">
       <header>
@@ -48,8 +55,10 @@
           <br />
           Binary Search is a type of searching algorithm. A searching algorithm
           means you find an item with a particular value in a sorted sequence.
-          Binary search is a type of searching algorithm which finds an item by
-          repeatedly halving the search space.
+          <i>
+            Binary search finds an item by <mark>repeatedly</mark> halving the
+            search space.
+          </i>
         </p>
         <figure>
           <img src="../images/binary-search.png" alt="Binary search" />
@@ -65,9 +74,7 @@
           To find the index of element e with a certain value:
         </p>
         <ol>
-          <li>
-            Start with an array sorted in descending order.
-          </li>
+          <li>Start with an array sorted in <u>descending</u> order.</li>
           <li>
             In each step: Pick the middle element of the array m and compare it
             to e. If element values are equal, then return index of m. If e is
@@ -79,6 +86,39 @@
           </li>
         </ol>
       </main>
+      <hr class="content-divider" />
+
+      <section>
+        <div class="bio">
+          <img
+            class="profile-pic"
+            src="https://github.com/vineethcode33.png"
+            alt="Vineeth Code"
+          />
+          <p class="bio-description">
+            <span class="sub-text"> WRITTEN BY</span>
+            <br />
+            <a href="https://github.com/vineethcode33/personal_blog"
+              >Vineeth Code</a
+            >
+            <br />
+            I&nbsp;explain important algorithms&#128540;.
+            <br />
+            <span class="sub-text">Student at Udacity</span>
+            <br />
+            Share:
+            <a href="https://twitter.com/intent/tweet?text=Binary%20Search">
+              <i class="fa fa-twitter"></i>
+            </a>
+            <a href="https://linkedin.com/">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="https://facebook.com/">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </p>
+        </div>
+      </section>
     </article>
 
     <footer class="footer-container">

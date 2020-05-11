@@ -2,6 +2,10 @@ body {
   font: 2.5em "Lucida Sans", Courier, monospace;
 }
 
+.container {
+  max-width: 26em;
+  margin: 0 auto;
+}
 .header-container {
   display: flex;
   justify-content: center;
@@ -10,6 +14,7 @@ body {
 
 .header-content {
   margin: 0em 0.3em;
+  color: #96031a;
 }
 
 .header-img {
@@ -17,7 +22,7 @@ body {
 }
 
 .vertical-line {
-  border-left: 2px solid #a9a9a9;
+  border-left: 0.3rem solid #6d676e;
 }
 
 .nav-container {
@@ -37,7 +42,10 @@ body {
   margin: 0 0.5em;
   cursor: pointer;
 }
-
+.content-divider {
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .bio {
   display: flex;
   max-width: 15em;
@@ -54,22 +62,19 @@ body {
   border-radius: 1em;
 }
 
+.cards-container {
+  margin: 0 auto;
+}
+
 .list-container {
   display: grid;
-  /* border: 0.05em solid green; */
-  max-width: 26em;
-  margin: 2em auto;
-  grid-template-columns: minmax(10em, 12em) minmax(10em, 12em);
+  grid-template-columns: repeat(1, 0.5fr) repeat(1, 0.5fr);
   grid-template-rows: auto;
-  justify-items: center;
-  grid-gap: 2em;
+  justify-content: space-evenly;
 }
 
 .card {
-  display: block;
-  /* border: 0.05em solid red; */
-  max-width: 10em;
-  margin: auto 1em;
+  margin: 1em;
 }
 
 a {
@@ -97,4 +102,5 @@ p {
   display: flex;
   justify-content: center;
   font-size: 0.4em;
+  float: ;
 }

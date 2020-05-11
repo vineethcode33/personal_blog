@@ -1,3 +1,7 @@
+.title-header {
+  text-align: center;
+}
+
 .blog-post {
   width: 70%;
   max-width: 22em;
@@ -24,4 +28,10 @@ img {
 ol,
 ul {
   font-size: 0.5em;
+}
+
+.sub-text {
+  letter-spacing: 0.2em;
+  font-size: 0.5em;
+  color: #6d676e;
 }
