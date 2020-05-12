@@ -15,28 +15,106 @@
     />
     <link rel="stylesheet" href="../styles/main.css" />
     <link rel="stylesheet" href="../styles/blog_post.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <header class="header-container">
-      <img
-        class="header-content header-img"
-        src="../images/favicon-32x32.png"
-        alt="blog"
-      />
-      <div class="header-content vertical-line"></div>
-      <span class="header-content">Personal Blog</span>
-    </header>
-    <nav class="nav-container">
-      <a class="nav-items" href="../index.html">Home</a>
-      <a class="nav-items" href="../index.html">About</a>
-      <a class="nav-items" href="../index.html">Social</a>
-      <a class="nav-items" href="../index.html">Subscribe</a>
-    </nav>
+    <div class="container">
+      <header class="header-container">
+        <img
+          class="header-content header-img"
+          src="../images/favicon-32x32.png"
+          alt="blog"
+        />
+        <div class="header-content vertical-line"></div>
+        <span class="header-content">Personal Blog</span>
+      </header>
+      <nav class="nav-container">
+        <a class="nav-items" href="../index.html">Home</a>
+        <a class="nav-items" href="../social.html">Social</a>
+      </nav>
+      <hr class="content-divider" />
 
-    <article class="blog-post"></article>
+      <article class="blog-post">
+        <header>
+          <h5 class="title-header">
+            <a href="./queue.html">Queue</a>
+          </h5>
+        </header>
+        <main class="article-content">
+          <p>
+            <strong> What is a Queue?</strong>
+            <br />
+            <i>
+              A queue is a linear abstract data type that can contain a long
+              list of elements. But what’s important to remember about them is
+              how they can grow and shrink in size.
+            </i>
+            There are some terms we’ve probably heard before that actually are
+            derived from the nomenclature of adding to or removing an element
+            from a queue structure. The process of of adding an element to a
+            queue is known as enqueuing, while removing an element from a queue
+            is known as dequeuing. The interesting thing about how queues work,
+            however, is where the enqueuing and dequeueing occurs.
+          </p>
+          <figure>
+            <img src="../images/queue.png" alt="Queues" />
+          </figure>
+          <p>
+            If we think about queues in a deli, or an appetizing shop, things
+            usually shake out like this: you take a number, and wait your turn
+            to be called. The person who arrived first is the one who is served
+            first. That’s just how most lines tend to work, right? <br />
+          </p>
+          <p>
+            The same goes for queue data structures: the first element at the
+            front of the queue is the first one that’ll be served — or, in most
+            cases, processed, handled, or run, depending on what the element is.
+            <br />
+          </p>
+        </main>
+        <hr class="content-divider" />
 
-    <footer class="footer-container">
-      <section>All rights reserved 2020 vineethcode@outlook.com</section>
-    </footer>
+        <section>
+          <div class="bio">
+            <img
+              class="profile-pic"
+              src="https://github.com/vineethcode33.png"
+              alt="Vineeth Code"
+            />
+            <p class="bio-description">
+              <span class="sub-text"> WRITTEN BY</span>
+              <br />
+              <a href="https://github.com/vineethcode33/personal_blog"
+                >Vineeth Code</a
+              >
+              <br />
+              I&nbsp;explain important algorithms&#128540;.
+              <br />
+              <span class="sub-text">Student at Udacity</span>
+              <br />
+              Share:
+              <a href="https://twitter.com/intent/tweet?text=Binary%20Search">
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a href="https://linkedin.com/">
+                <i class="fa fa-linkedin"></i>
+              </a>
+              <a href="https://facebook.com/">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </p>
+          </div>
+        </section>
+      </article>
+
+      <footer class="footer-container">
+        <section>All rights reserved 2020 vineethcode@outlook.com</section>
+      </footer>
+    </div>
   </body>
 </html>

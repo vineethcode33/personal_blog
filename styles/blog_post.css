@@ -1,3 +1,6 @@
+@import url("./mobile_screens.css") screen;
+@import url("./medium_screens.css") screen;
+
 .title-header {
   text-align: center;
 }

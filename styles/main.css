@@ -1,3 +1,6 @@
+@import url("./medium_screens.css") screen;
+@import url("./mobile_screens.css") screen;
+
 body {
   font: 2.5em "Lucida Sans", Courier, monospace;
 }
@@ -102,5 +105,12 @@ p {
   display: flex;
   justify-content: center;
   font-size: 0.4em;
-  float: ;
+}
+
+.social {
+  margin: 2em 4em;
+}
+
+td {
+  padding: 1em 2em;
 }

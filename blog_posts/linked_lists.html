@@ -15,28 +15,129 @@
     />
     <link rel="stylesheet" href="../styles/main.css" />
     <link rel="stylesheet" href="../styles/blog_post.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <header class="header-container">
-      <img
-        class="header-content header-img"
-        src="../images/favicon-32x32.png"
-        alt="blog"
-      />
-      <div class="header-content vertical-line"></div>
-      <span class="header-content">Personal Blog</span>
-    </header>
-    <nav class="nav-container">
-      <a class="nav-items" href="../index.html">Home</a>
-      <a class="nav-items" href="../index.html">About</a>
-      <a class="nav-items" href="../index.html">Social</a>
-      <a class="nav-items" href="../index.html">Subscribe</a>
-    </nav>
+    <div class="container">
+      <header class="header-container">
+        <img
+          class="header-content header-img"
+          src="../images/favicon-32x32.png"
+          alt="blog"
+        />
+        <div class="header-content vertical-line"></div>
+        <span class="header-content">Personal Blog</span>
+      </header>
+      <nav class="nav-container">
+        <a class="nav-items" href="../index.html">Home</a>
+        <a class="nav-items" href="../social.html">Social</a>
+      </nav>
+      <hr class="content-divider" />
+      <article class="blog-post">
+        <header>
+          <h5 class="title-header">
+            <a href="./linked_lists.html">Linked List</a>
+          </h5>
+        </header>
+        <main class="article-content">
+          <p>
+            <strong> What is a Linked List?</strong>
+            <br />
+            <i>
+              A linked list is a linear data structure that contains a
+              <mark>sequence of nodes</mark>, in which each node contains data
+              and a pointer to another node.</i
+            >
+            The most common example is a singly linked list, where each node
+            contains a piece of data and a pointer to the next list, as shown in
+            the diagram below.
+          </p>
+          <figure>
+            <img src="../images/linked_list.png" alt="Linked List" />
+          </figure>
+          <p>
+            <strong>
+              Advantages of Linked Lists:
+            </strong>
+            <br />
+          </p>
+          <p>
+            When I first encountered linked lists, I struggled to see their
+            benefits. The thought of having to traverse the entire list to
+            access an element seemed time-consuming, and I wondered what upside
+            linked lists had to offer. What I hadn’t yet considered is the
+            benefits linked lists offer when it comes to memory and storage.
+            <br />
+          </p>
+          <p>
+            Arrays are static in size, meaning the upper limit in terms of
+            number of items has to be known in advance when creating the memory
+            to store an array. This can often lead to extra memory that is not
+            used because the upper limit is never reached, or, having to create
+            a new object in memory if the upper limit is exceeded. This is less
+            of an issue now because most modern programming languages have
+            operations running under the hood that can efficiently shrink and
+            grow arrays, but it remains a critical feature when it comes to
+            understanding linked lists. <br />
+          </p>
+          <p>
+            The other case where linked lists are very useful is random
+            insertion of a new data point. If for example, you have an array [1,
+            3, 4, 5, 6, 7] and you want to insert the value 2 between 1 and 3,
+            you would to have shift every value from 3 to 7 over a space so that
+            2 could be stored in the second position. This makes random
+            insertion an expensive operation in terms of an memory when it comes
+            to arrays. In a linked list, however, you could simply create a new
+            node with the value data: 2 that points to the node with the value
+            of 3 next, and update the next value of the first node to point to
+            our new node instead of the one with the value of 3. This is a much
+            cheaper operation than what we have to do with an array in this
+            scenario.
+          </p>
+        </main>
+        <hr class="content-divider" />
 
-    <article class="blog-post"></article>
+        <section>
+          <div class="bio">
+            <img
+              class="profile-pic"
+              src="https://github.com/vineethcode33.png"
+              alt="Vineeth Code"
+            />
+            <p class="bio-description">
+              <span class="sub-text"> WRITTEN BY</span>
+              <br />
+              <a href="https://github.com/vineethcode33/personal_blog"
+                >Vineeth Code</a
+              >
+              <br />
+              I&nbsp;explain important algorithms&#128540;.
+              <br />
+              <span class="sub-text">Student at Udacity</span>
+              <br />
+              Share:
+              <a href="https://twitter.com/intent/tweet?text=Binary%20Search">
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a href="https://linkedin.com/">
+                <i class="fa fa-linkedin"></i>
+              </a>
+              <a href="https://facebook.com/">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </p>
+          </div>
+        </section>
+      </article>
 
-    <footer class="footer-container">
-      <section>All rights reserved 2020 vineethcode@outlook.com</section>
-    </footer>
+      <footer class="footer-container">
+        <section>All rights reserved 2020 vineethcode@outlook.com</section>
+      </footer>
+    </div>
   </body>
 </html>

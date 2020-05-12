@@ -23,106 +23,107 @@
     />
   </head>
   <body>
-    <header class="header-container">
-      <img
-        class="header-content header-img"
-        src="../images/favicon-32x32.png"
-        alt="blog"
-      />
-      <div class="header-content vertical-line"></div>
-      <span class="header-content">Personal Blog</span>
-    </header>
-    <nav class="nav-container">
-      <a class="nav-items" href="../index.html">Home</a>
-      <a class="nav-items" href="../index.html">About</a>
-      <a class="nav-items" href="../index.html">Social</a>
-      <a class="nav-items" href="../index.html">Subscribe</a>
-    </nav>
-    <hr class="content-divider" />
-
-    <article class="blog-post">
-      <header>
-        <h5 class="title-header">
-          <a href="./binary_search.html">Binary Search</a>
-        </h5>
+    <div class="container">
+      <header class="header-container">
+        <img
+          class="header-content header-img"
+          src="../images/favicon-32x32.png"
+          alt="blog"
+        />
+        <div class="header-content vertical-line"></div>
+        <span class="header-content">Personal Blog</span>
       </header>
-      <main class="article-content">
-        <p>
-          <strong>
-            What is Binary Search and how is it associated with
-            Algorithms?</strong
-          >
-          <br />
-          Binary Search is a type of searching algorithm. A searching algorithm
-          means you find an item with a particular value in a sorted sequence.
-          <i>
-            Binary search finds an item by <mark>repeatedly</mark> halving the
-            search space.
-          </i>
-        </p>
-        <figure>
-          <img src="../images/binary-search.png" alt="Binary search" />
-          <figcaption class="img-caption">
-            Funny depiction of Binary search
-          </figcaption>
-        </figure>
-        <p>
-          <strong>
-            Steps on how Binary Search works:
-          </strong>
-          <br />
-          To find the index of element e with a certain value:
-        </p>
-        <ol>
-          <li>Start with an array sorted in <u>descending</u> order.</li>
-          <li>
-            In each step: Pick the middle element of the array m and compare it
-            to e. If element values are equal, then return index of m. If e is
-            greater than m, then e must be in left subarray.
-          </li>
-          <li>
-            If m is greater than e, then e must be in the right subarray. Repeat
-            those steps on new subarray.
-          </li>
-        </ol>
-      </main>
+      <nav class="nav-container">
+        <a class="nav-items" href="../index.html">Home</a>
+        <a class="nav-items" href="../social.html">Social</a>
+      </nav>
       <hr class="content-divider" />
 
-      <section>
-        <div class="bio">
-          <img
-            class="profile-pic"
-            src="https://github.com/vineethcode33.png"
-            alt="Vineeth Code"
-          />
-          <p class="bio-description">
-            <span class="sub-text"> WRITTEN BY</span>
-            <br />
-            <a href="https://github.com/vineethcode33/personal_blog"
-              >Vineeth Code</a
+      <article class="blog-post">
+        <header>
+          <h5 class="title-header">
+            <a href="./binary_search.html">Binary Search</a>
+          </h5>
+        </header>
+        <main class="article-content">
+          <p>
+            <strong>
+              What is Binary Search and how is it associated with
+              Algorithms?</strong
             >
             <br />
-            I&nbsp;explain important algorithms&#128540;.
-            <br />
-            <span class="sub-text">Student at Udacity</span>
-            <br />
-            Share:
-            <a href="https://twitter.com/intent/tweet?text=Binary%20Search">
-              <i class="fa fa-twitter"></i>
-            </a>
-            <a href="https://linkedin.com/">
-              <i class="fa fa-linkedin"></i>
-            </a>
-            <a href="https://facebook.com/">
-              <i class="fa fa-facebook"></i>
-            </a>
+            Binary Search is a type of searching algorithm. A searching
+            algorithm means you find an item with a particular value in a sorted
+            sequence.
+            <i>
+              Binary search finds an item by <mark>repeatedly</mark> halving the
+              search space.
+            </i>
           </p>
-        </div>
-      </section>
-    </article>
+          <figure>
+            <img src="../images/binary-search.png" alt="Binary search" />
+            <figcaption class="img-caption">
+              Funny depiction of Binary search
+            </figcaption>
+          </figure>
+          <p>
+            <strong>
+              Steps on how Binary Search works:
+            </strong>
+            <br />
+            To find the index of element e with a certain value:
+          </p>
+          <ol>
+            <li>Start with an array sorted in <u>descending</u> order.</li>
+            <li>
+              In each step: Pick the middle element of the array m and compare
+              it to e. If element values are equal, then return index of m. If e
+              is greater than m, then e must be in left subarray.
+            </li>
+            <li>
+              If m is greater than e, then e must be in the right subarray.
+              Repeat those steps on new subarray.
+            </li>
+          </ol>
+        </main>
+        <hr class="content-divider" />
 
-    <footer class="footer-container">
-      <section>All rights reserved 2020 vineethcode@outlook.com</section>
-    </footer>
+        <section>
+          <div class="bio">
+            <img
+              class="profile-pic"
+              src="https://github.com/vineethcode33.png"
+              alt="Vineeth Code"
+            />
+            <p class="bio-description">
+              <span class="sub-text"> WRITTEN BY</span>
+              <br />
+              <a href="https://github.com/vineethcode33/personal_blog"
+                >Vineeth Code</a
+              >
+              <br />
+              I&nbsp;explain important algorithms&#128540;.
+              <br />
+              <span class="sub-text">Student at Udacity</span>
+              <br />
+              Share:
+              <a href="https://twitter.com/intent/tweet?text=Binary%20Search">
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a href="https://linkedin.com/">
+                <i class="fa fa-linkedin"></i>
+              </a>
+              <a href="https://facebook.com/">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </p>
+          </div>
+        </section>
+      </article>
+
+      <footer class="footer-container">
+        <section>All rights reserved 2020 vineethcode@outlook.com</section>
+      </footer>
+    </div>
   </body>
 </html>

@@ -1,18 +1,36 @@
-.card {
-  display: block;
-  /* border: 0.05em solid red; */
-  max-width: 10em;
-}
+@media only screen and (max-width: 375px) {
+  body {
+    font: 1.5em "Lucida Sans", Courier, monospace !important;
+  }
 
-a,
-.title-header {
-  margin: 0;
-  color: #551a8b;
-  text-decoration: none;
-}
+  .container {
+    width: 95%;
+  }
 
-.sub-header {
-  margin-top: 0em;
-  font-size: 0.4em;
-  color: #a9a9a9;
+  .list-container {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+
+  .blog-post {
+    width: 95% !important;
+    max-width: 370px !important;
+    /* border: solid 1px brown; */
+    margin: 1em auto !important;
+  }
+
+  img {
+    width: 90%;
+  }
+
+  footer > section {
+    font-size: 0.7em;
+  }
+
+  .social {
+    margin: 0.5em 0.75em !important;
+  }
+
+  td {
+    padding: 0.25em 0.25em !important;
+  }
 }

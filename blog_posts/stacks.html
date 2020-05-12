@@ -15,28 +15,121 @@
     />
     <link rel="stylesheet" href="../styles/main.css" />
     <link rel="stylesheet" href="../styles/blog_post.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <header class="header-container">
-      <img
-        class="header-content header-img"
-        src="../images/favicon-32x32.png"
-        alt="blog"
-      />
-      <div class="header-content vertical-line"></div>
-      <span class="header-content">Personal Blog</span>
-    </header>
-    <nav class="nav-container">
-      <a class="nav-items" href="../index.html">Home</a>
-      <a class="nav-items" href="../index.html">About</a>
-      <a class="nav-items" href="../index.html">Social</a>
-      <a class="nav-items" href="../index.html">Subscribe</a>
-    </nav>
+    <div class="container">
+      <header class="header-container">
+        <img
+          class="header-content header-img"
+          src="../images/favicon-32x32.png"
+          alt="blog"
+        />
+        <div class="header-content vertical-line"></div>
+        <span class="header-content">Personal Blog</span>
+      </header>
+      <nav class="nav-container">
+        <a class="nav-items" href="../index.html">Home</a>
+        <a class="nav-items" href="../social.html">Social</a>
+      </nav>
+      <hr class="content-divider" />
 
-    <article class="blog-post"></article>
+      <article class="blog-post">
+        <header>
+          <h5 class="title-header">
+            <a href="./stacks.html">Stacks</a>
+          </h5>
+        </header>
+        <main class="article-content">
+          <p>
+            <strong> What is a Stack?</strong>
+            <br />
+            <i>
+              A stack is a list of items that can only be
+              <mark> changed from one side</mark>, called the top of the stack.
+            </i>
+            <br />
+            Plate dispensers are a great real-world analogy to stacks. Plates
+            can only be added or removed from the top of the stack. The last
+            plate you add is the always the first plate you take out. This is
+            referred to as the
+            <strong> Last-In-First-Out principle (LIFO).</strong>
+          </p>
+          <figure>
+            <img src="../images/stacks.png" alt="Stacks" />
+          </figure>
+          <p>
+            Stacks only allow us to push() items to the top of the stack, and
+            pop() the item that was just added. “But what happens if you never
+            Undo? The stack must become huge!” Correct. Since you can never
+            remove anything from a Stack except the last action, the Undo Stack
+            will eventually become huge. This is why applications like Adobe
+            Photoshop start using a large amount of RAM the longer you work on a
+            file. The Undo Stack stores all of your actions in memory until you
+            save and exit the file.<br />
+          </p>
+          <p>
+            You can implement a Stack using a LinkedList or a Array:
+            <br />
+          </p>
+          <p>
+            Arrays use a contiguous block of memory, so they will take up
+            unnecessary space when the Stack is small. Another downside is that
+            Arrays have to copy themselves to a new memory location every time
+            they reach their pre-allocated capacity.
+            <br />
+          </p>
+          <p>
+            LinkedLists do not use contiguous memory. Linked Lists never have to
+            make a copy of themselves; they can grow indefinitely. So using them
+            is slightly more optimal from a time complexity perspective.
+            However, LinkedLists require each item to know the memory address of
+            the next item in the list, so they take a bit of extra space.
+          </p>
+        </main>
+        <hr class="content-divider" />
 
-    <footer class="footer-container">
-      <section>All rights reserved 2020 vineethcode@outlook.com</section>
-    </footer>
+        <section>
+          <div class="bio">
+            <img
+              class="profile-pic"
+              src="https://github.com/vineethcode33.png"
+              alt="Vineeth Code"
+            />
+            <p class="bio-description">
+              <span class="sub-text"> WRITTEN BY</span>
+              <br />
+              <a href="https://github.com/vineethcode33/personal_blog"
+                >Vineeth Code</a
+              >
+              <br />
+              I&nbsp;explain important algorithms&#128540;.
+              <br />
+              <span class="sub-text">Student at Udacity</span>
+              <br />
+              Share:
+              <a href="https://twitter.com/intent/tweet?text=Binary%20Search">
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a href="https://linkedin.com/">
+                <i class="fa fa-linkedin"></i>
+              </a>
+              <a href="https://facebook.com/">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </p>
+          </div>
+        </section>
+      </article>
+
+      <footer class="footer-container">
+        <section>All rights reserved 2020 vineethcode@outlook.com</section>
+      </footer>
+    </div>
   </body>
 </html>

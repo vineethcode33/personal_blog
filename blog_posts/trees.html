@@ -15,28 +15,117 @@
     />
     <link rel="stylesheet" href="../styles/main.css" />
     <link rel="stylesheet" href="../styles/blog_post.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <header class="header-container">
-      <img
-        class="header-content header-img"
-        src="../images/favicon-32x32.png"
-        alt="blog"
-      />
-      <div class="header-content vertical-line"></div>
-      <span class="header-content">Personal Blog</span>
-    </header>
-    <nav class="nav-container">
-      <a class="nav-items" href="../index.html">Home</a>
-      <a class="nav-items" href="../index.html">About</a>
-      <a class="nav-items" href="../index.html">Social</a>
-      <a class="nav-items" href="../index.html">Subscribe</a>
-    </nav>
+    <div class="container">
+      <header class="header-container">
+        <img
+          class="header-content header-img"
+          src="../images/favicon-32x32.png"
+          alt="blog"
+        />
+        <div class="header-content vertical-line"></div>
+        <span class="header-content">Personal Blog</span>
+      </header>
+      <nav class="nav-container">
+        <a class="nav-items" href="../index.html">Home</a>
+        <a class="nav-items" href="../social.html">Social</a>
+      </nav>
+      <hr class="content-divider" />
 
-    <article class="blog-post"></article>
+      <article class="blog-post">
+        <header>
+          <h5 class="title-header">
+            <a href="./stacks.html">Stacks</a>
+          </h5>
+        </header>
+        <main class="article-content">
+          <p>
+            <strong> What is a Stack?</strong>
+            <br />
+            <i>
+              Trees are well known as a non-linear Data Structure. It doesn’t
+              store data in a linear way.
+              <mark> It organizes data in a hierarchical way.</mark>
+            </i>
+            <br />
+            What do I mean about hierarchical way? Imagine a family tree with
+            all generation relationship: grandparents, parents, children,
+            siblings, etc. We commonly organize it in a hierarchical way.
+          </p>
+          <figure>
+            <img src="../images/tree.png" alt="Tree" />
+          </figure>
+          <p>
+            This is my Tree Family. Tossico, Akikazu, Hitomi and Takemi are all
+            my grandparents. Toshiaki and Juliana are my parents. TK, Yuji,
+            Bruno and Kaio are the children of my parents (Me and my brothers,
+            duh!)<br />
+          </p>
+          <p>
+            So a Tree is a collection of entities called node connected by
+            edges. Each node contains a value or data and it can also have a
+            child node (or not).
+            <br />
+          </p>
+          <p>
+            The first node of the tree is called the root. If this root node is
+            connected by another node, the root is a parent node and the
+            connected node is a child.
+            <br />
+          </p>
+          <p>
+            Tree nodes are all connected by links called edges. It’s an
+            important part of trees, because it’s how we manage relationship
+            between nodes. Leafs are the “last nodes" from the tree. Or nodes
+            without children. Like real trees. We have the root, branches, and
+            finally the leafs.
+          </p>
+        </main>
+        <hr class="content-divider" />
 
-    <footer class="footer-container">
-      <section>All rights reserved 2020 vineethcode@outlook.com</section>
-    </footer>
+        <section>
+          <div class="bio">
+            <img
+              class="profile-pic"
+              src="https://github.com/vineethcode33.png"
+              alt="Vineeth Code"
+            />
+            <p class="bio-description">
+              <span class="sub-text"> WRITTEN BY</span>
+              <br />
+              <a href="https://github.com/vineethcode33/personal_blog"
+                >Vineeth Code</a
+              >
+              <br />
+              I&nbsp;explain important algorithms&#128540;.
+              <br />
+              <span class="sub-text">Student at Udacity</span>
+              <br />
+              Share:
+              <a href="https://twitter.com/intent/tweet?text=Binary%20Search">
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a href="https://linkedin.com/">
+                <i class="fa fa-linkedin"></i>
+              </a>
+              <a href="https://facebook.com/">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </p>
+          </div>
+        </section>
+      </article>
+
+      <footer class="footer-container">
+        <section>All rights reserved 2020 vineethcode@outlook.com</section>
+      </footer>
+    </div>
   </body>
 </html>
